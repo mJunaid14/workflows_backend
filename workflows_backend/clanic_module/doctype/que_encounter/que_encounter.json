@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:QUENC{##}",
+ "creation": "2023-10-19 16:47:23.208598",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "reason",
+  "payment",
+  "column_break_gaurj",
+  "doctor_name",
+  "non_consultative"
+ ],
+ "fields": [
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "column_break_gaurj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Select",
+   "label": "Payment",
+   "options": "CASH\nINSURANCE"
+  },
+  {
+   "fieldname": "doctor_name",
+   "fieldtype": "Data",
+   "label": "Doctor Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "non_consultative",
+   "fieldtype": "Check",
+   "label": "Non_consultative"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Patient"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-23 12:41:51.418189",
+ "modified_by": "Administrator",
+ "module": "clanic module",
+ "name": "Que encounter",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
